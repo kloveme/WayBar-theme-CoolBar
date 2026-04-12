@@ -1,0 +1,103 @@
+{
+    "layer": "top",
+    "position": "left", 
+    "orientation": "vertical",
+    "spacing":8,
+    "width": 17,
+    "modules-left": [
+        "custom/logo",
+        "hyprland/workspaces"
+    ],
+    "modules-center": [
+        "custom/terminal",
+        "custom/firefox",
+        "custom/vscode",
+        "custom/spotify",
+        "custom/files"
+    ],
+    "modules-right": [
+        "clock",
+        "battery",
+        "wireplumber",
+        "custom/power",
+        "tray"
+    ],
+
+    "custom/logo": {
+        "format": ""
+    },
+
+    "custom/spotify": {
+        "format": "     / Spotify",
+        "on-click" : "spotify"
+    },
+
+    "custom/files" : {
+        "format" : "   / Files",
+        "on-click" : "kitty -e yazi",
+        "tooltip" : false
+    },
+    "custom/terminal": {
+        "format": "    / Terminal",
+        "on-click": "kitty",
+        "tooltip": false
+    },
+    "custom/vscode": {
+        "format": "   󰨞  / VsCode ",
+        "on-click": "code",
+        "tooltip": false
+    },
+    "custom/firefox": {
+        "format": "   / Firefox",
+        "on-click": "firefox",
+        "tooltip": false
+    },
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "orientation": "vertical",
+        "format-icons": {
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6"
+        },
+        "persistent-workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": []
+        }
+    },
+    "tray" : {
+        "orientation": "horizontal",
+        "icon-size": 15
+    },
+    "memory": {
+        "format": "󰍛 {}%",
+        "interval": 5
+    },
+    "network": {
+        "format-wifi": "",
+        "format-ethernet": "󰈀",
+        "format-disconnected": "󰖪"
+    },
+    "wireplumber": {
+        "format": "{icon}  {volume}%",
+        "format-icons": ["", "", ""]
+    },
+    "battery": {
+        "format": "{icon}  {capacity}%",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "clock": {
+        "format": " {:%H:%M}"
+    },
+    "custom/power": {
+        "format": "  ",
+        "on-click": "systemctl poweroff",
+        "tooltip": false
+    }
+}
