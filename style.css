@@ -10,12 +10,11 @@
 
 window#waybar {
   padding: 5px;
-  border-top-right-radius: 34px;
-  border-bottom-right-radius: 34px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
   background-color: rgba(24, 24, 37, 0.848);
   transition-property: background-color;
   transition-duration: 0.5s;
-
 }
 
 window#waybar.hidden {
@@ -59,7 +58,7 @@ window#waybar.hidden {
 }
 
 #clock {
-  margin-top: 25px;
+  margin-top: 3px;
 }
 
 #memory,
@@ -84,10 +83,9 @@ window#waybar.hidden {
 }
 
 #tray {
-  margin-left: 25px;
-  margin-right: 25px;
-  border-radius: 20px;
-  background-color: #7964c5;
+  margin-top: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 #custom-terminal,
@@ -101,8 +99,7 @@ window#waybar.hidden {
   margin-right: 20px;
 } 
 
-#tray{
-  border: 2px solid white;
+#custom-power{
   margin-bottom: 50px;
 }
 

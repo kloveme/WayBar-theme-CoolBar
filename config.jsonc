@@ -10,17 +10,16 @@
     ],
     "modules-center": [
         "custom/terminal",
-        "custom/firefox",
         "custom/vscode",
         "custom/spotify",
         "custom/files"
     ],
     "modules-right": [
+        "tray",
         "clock",
         "battery",
         "wireplumber",
-        "custom/power",
-        "tray"
+        "custom/power"
     ],
 
     "custom/logo": {
@@ -28,8 +27,8 @@
     },
 
     "custom/spotify": {
-        "format": "     / Spotify",
-        "on-click" : "spotify"
+        "format": "     / Neovim",
+        "on-click" : "kitty -e nvim"
     },
 
     "custom/files" : {
@@ -56,12 +55,16 @@
         "format": "{icon}",
         "orientation": "vertical",
         "format-icons": {
-            "1": "1",
-            "2": "2",
-            "3": "3",
-            "4": "4",
-            "5": "5",
-            "6": "6"
+            "1": "󱎔",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "6": "",
+            "7": "",
+            "8": "",
+            "9": "",
+            "10": "󱎔"
         },
         "persistent-workspaces": {
             "1": [],
@@ -73,7 +76,7 @@
     },
     "tray" : {
         "orientation": "horizontal",
-        "icon-size": 15
+        "icon-size": 18
     },
     "memory": {
         "format": "󰍛 {}%",
